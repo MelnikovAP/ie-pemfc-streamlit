@@ -18,7 +18,7 @@ works = ['Introduction',
 # Sidebar
 # ==============================
 
-st.sidebar.image('./Images/logo.png')
+st.sidebar.image('https://raw.githubusercontent.com/MelnikovAP/pv-streamlit/main/Images/logo.png')
 st.sidebar.markdown('***')
 st.sidebar.header('PEMFC cloud model')
 tab_selected = st.sidebar.selectbox('Select the work:', works)
@@ -30,7 +30,7 @@ if tab_selected != works[0]:
 # Main page
 # ==============================
 
-header_container = st.beta_container()
+header_container = st.container()
 for item in works:
     if tab_selected == item:
         with header_container:
@@ -39,11 +39,11 @@ for item in works:
 
 if tab_selected == works[0]:
     
-    introduction_container = st.beta_container()
-    scheme_container = st.beta_container()
-    basics_container = st.beta_container()
-    theory_container = st.beta_container()
-    whatnext_container = st.beta_container()
+    introduction_container = st.container()
+    scheme_container = st.container()
+    basics_container = st.container()
+    theory_container = st.container()
+    whatnext_container = st.container()
 
     with introduction_container:
         pass
@@ -70,18 +70,18 @@ if tab_selected == works[0]:
 
 if tab_selected == works[1]:
     
-    introduction_container = st.beta_container()
+    introduction_container = st.container()
 
     with introduction_container:
         pass
 
 
 if tab_selected == works[2]:
-    introduction_container = st.beta_container()
+    introduction_container = st.container()
 
 if tab_selected == works[3]:
-    introduction_container = st.beta_container()
+    introduction_container = st.container()
 
 if tab_selected == works[4]:
-    introduction_container = st.beta_container()
+    introduction_container = st.container()
 
